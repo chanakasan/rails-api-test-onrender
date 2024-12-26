@@ -5,7 +5,7 @@ import viteRubySvg from '/assets/vite_ruby.svg'
 
 import cs from './Example.module.css'
 
-export default function InertiaExample({ name }: { name: string }) {
+export default function ExamplePage({ name }: { name: string }) {
   const [count, setCount] = useState(0)
 
   return (
@@ -14,9 +14,6 @@ export default function InertiaExample({ name }: { name: string }) {
         <h1 className={cs.h1}>Hello {name}!</h1>
 
         <div>
-          <a href="https://inertia-rails.netlify.app" target="_blank">
-            <img className={cs.logo} src={inertiaSvg} alt="Inertia logo" />
-          </a>
           <a href="https://vite-ruby.netlify.app" target="_blank">
             <img
               className={`${cs.logo} ${cs.vite}`}
