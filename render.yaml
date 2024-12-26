@@ -1,13 +1,14 @@
 databases:
   - name: my_db_one
+    plan: free
     ipAllowList: []
     databaseName: my_rails_app_one_prod_db
     user: my_rails_app_one_prod_db
-    plan: basic-256mb
 
 services:
   - type: web
     name: my_rails_app_one
+    plan: free
     env: ruby
     buildCommand: "./render-build.sh"
     startCommand: "bundle exec rails s"
